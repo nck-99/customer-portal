@@ -1,0 +1,20 @@
+root - INFO - Loading page on #CHROME Browser
+root - INFO - Locating BODY of the page
+root - INFO - Calculating Page Load Time
+
+root - INFO - Page load time 8.990376234054565 seconds
+
+root - INFO - Scrolling through page height
+
+root - INFO - Page speed: 299.6537552895085 bytes/second
+
+root - INFO - Executing tests to check performance time
+
+root - INFO - Page loaded in 13.985395431518555 ms
+root - INFO - Page load speed: 142.8686252407985 KB/s
+
+root - INFO - Running regression tests for 10 repetition
+
+root - INFO - Number of requests: 10
+root - INFO - Total load time:  25.014245748519897  seconds
+root - INFO - Average load time per request: 2.5014245748519897  seconds
