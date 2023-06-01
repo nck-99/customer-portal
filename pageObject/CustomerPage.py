@@ -73,7 +73,6 @@ class LoginPage(BasePage):
             return True
         else:
             return False
-
     def user_details(self):
         time.sleep(5)
         self.find_element(self.PROFILE).click()
@@ -95,9 +94,10 @@ class LoginPage(BasePage):
         print(m)
         a = "Please enter 10 digit mobile number"
         c = "User is not registered"
+        n = "Username or password do not match."
         b = "https://ibpodev.home.tatamotors/edukaan_ui/#/account/login?isLogin=true"
         self.wait(5)
-        if a or c in m or self.driver.current_url == b:
+        if a or c or n in m or self.driver.current_url == b:
             return True
         else:
             return False

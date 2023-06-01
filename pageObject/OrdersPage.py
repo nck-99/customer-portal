@@ -1,11 +1,10 @@
 import time
 from selenium.webdriver.common.by import By
 from BasePage.Base_Page import BasePage
-
+from pageObject.WhishList import Whish_List
 from pageObject import SETPassword
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+import random
 
 class Orders(BasePage):
     Body = (By.TAG_NAME, "body")
@@ -22,7 +21,7 @@ class Orders(BasePage):
     Verify_empty_cart = (By.XPATH, "/html/body/div[1]/app-root/app-main/section/cart-summary/div/form/fieldset/div/div[3]/mat-card/mat-tab-group/div/mat-tab-body[1]/div/div/div[1]/div")
     Next_button = (By.XPATH, "/html/body/div[1]/app-root/app-main/section/cart-summary/div/form/fieldset/div/div[4]/mat-card/div[3]/button")
     Proceed_to_payment = (By.XPATH, "/html/body/div[1]/app-root/app-main/section/cart-address/div/form/fieldset/div/div[2]/mat-card/div[5]/button[2]")
-    Apply_cupon = (By.XPATH, "/html/body/div[2]/div/div[6]/button[1]")
+    Apply_cupon = (By.XPATH, "/html/body/div[4]/div/div[6]/button[1]")
     GST_popup = (By.XPATH, "/html/body/modal-container/div/div/gst-permmission/div/div/div[2]/button[2]")
     Terms_Conditions = (By.XPATH, "/html/body/div[1]/app-root/app-main/section/cart-payment/div/form/fieldset/div/div[2]/mat-card/div[5]/mat-checkbox/label/div")
     Place_Order = (By.XPATH, "/html/body/div[1]/app-root/app-main/section/cart-payment/div/form/fieldset/div/div[2]/mat-card/div[6]/button[2]")
@@ -39,7 +38,7 @@ class Orders(BasePage):
     def add_to_cart(self, setup, item):
         sp = SETPassword.SetPassword(setup)
         sp.static_login(setup)
-        wl = WhishList.Whish_List(setup)
+        wl = Whish_List(setup)
         wl.search_part(item)
         wl.select_part()
         self.driver.execute_script("window.scrollTo(0, 100);")
@@ -47,9 +46,9 @@ class Orders(BasePage):
         time.sleep(3)
 
     def verify_add_cart(self, setup):
-        wl = WhishList.Whish_List(setup)
+        wl = Whish_List(setup)
         msg = wl.container_msg()
-        print("########", msg)
+        print("Note:", msg)
         a = "added to cart"
         b = "Product already exist."
         if a in msg:
@@ -91,7 +90,7 @@ class Orders(BasePage):
         time.sleep(3)
         self.find_element(self.Clear_All).click()
         self.find_element(self.Confirm_Clear).click()
-        wl = WhishList.Whish_List(setup)
+        wl = Whish_List(setup)
         msg = wl.container_msg()
         if "Cleared all cart successfully" in msg:
             return True
@@ -107,15 +106,19 @@ class Orders(BasePage):
         time.sleep(3)
         order.click()
 
-    def apply_cupon(self):
-        try:
-            cupon = self.find_element(self.Apply_cupon)
-            cupon.click()
-        except NoSuchElementException:
-            pass
+    def skip_cupon(self):
+        width = self.driver.execute_script("return window.innerWidth;")
+        height = self.driver.execute_script("return window.innerHeight;")
+        x = random.randint(0, width)
+        y = random.randint(0, height)
+        self.driver.execute_script("window.scrollTo({0}, {1})".format(x, y))
+        time.sleep(1)
+        self.driver.execute_script("document.elementFromPoint({0}, {1}).click()".format(x, y))
 
     def move_to_payment(self):
-        self.find_element(self.Proceed_to_payment).send_keys(Keys.ARROW_DOWN * 10)
+        self.skip_cupon()
+        time.sleep(3)
+        self.find_element(self.Body).send_keys(Keys.ARROW_UP * 7)
         time.sleep(3)
         self.find_element(self.Proceed_to_payment).click()
         time.sleep(3)
@@ -133,8 +136,7 @@ class Orders(BasePage):
 
     def verify_order_no(self):
         order_no = self.find_element(self.Order_no)
-        print(order_no)
-        print(order_no.text)
+        print("ORDER NUMBER:", order_no.text)
         return order_no.text
 
     def cancel_order(self, setup):
@@ -155,7 +157,7 @@ class Orders(BasePage):
         self.find_element(self.confirm_cancel_req).click()
 
     def verify_cancel_order(self, setup):
-        wl = WhishList.Whish_List(setup)
+        wl = Whish_List(setup)
         msg = wl.container_msg()
         m = "Cancellation Request Accepted"
         if m in msg:
