@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13fd76ce-9cef-4f0f-9f75-90c0b2da8319" name="Changes" comment="Edukaan_Customer">
-      <change afterPath="$PROJECT_DIR$/pageObject/DashBoard.py" afterDir="false" />
+    <list default="true" id="13fd76ce-9cef-4f0f-9f75-90c0b2da8319" name="Changes" comment="6/1/23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/PageLoadTime.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/PageLoadTime.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/pageLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/pageLoad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/test_customer_login_logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_customer_login_logout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_schedule_delivery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/test_order_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_order_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/test_whishlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_whishlist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pageObject/CustomerPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/CustomerPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pageObject/OrdersPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/OrdersPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pageObject/SETPassword.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/SETPassword.py" afterDir="false" />
@@ -30,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="edukan_customer1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,8 +52,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.pytest for test_schedule_delivery.TestScheduleDelivery.test_select_delete_order">
-    <configuration name="pytest for test_cart_actions.Test_CartActions" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_customer_login_logout.Test_Login_Logout.test_Login">
+    <configuration name="pytest for test_customer_login_logout.Test_Login_Logout" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Edukaan_Customer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,11 +65,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cart_actions.Test_CartActions&quot;" />
+      <option name="_new_target" value="&quot;test_customer_login_logout.Test_Login_Logout&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_part_search.Test_Part_Search" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_customer_login_logout.Test_Login_Logout.test_Login" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Edukaan_Customer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,11 +81,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_part_search.Test_Part_Search&quot;" />
+      <option name="_new_target" value="&quot;test_customer_login_logout.Test_Login_Logout.test_Login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_schedule_delivery.TestScheduleDelivery" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_customer_login_logout.Test_Login_Logout.test_Logout" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Edukaan_Customer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,7 +97,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_schedule_delivery.TestScheduleDelivery&quot;" />
+      <option name="_new_target" value="&quot;test_customer_login_logout.Test_Login_Logout.test_Logout&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -136,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_customer_login_logout.Test_Login_Logout.test_Login" />
+        <item itemvalue="Python tests.pytest for test_customer_login_logout.Test_Login_Logout.test_Logout" />
+        <item itemvalue="Python tests.pytest for test_customer_login_logout.Test_Login_Logout" />
         <item itemvalue="Python tests.pytest for test_schedule_delivery.TestScheduleDelivery.test_select_delete_order" />
         <item itemvalue="Python tests.pytest for test_schedule_delivery.TestScheduleDelivery.test_schedule_delivery" />
-        <item itemvalue="Python tests.pytest for test_schedule_delivery.TestScheduleDelivery" />
-        <item itemvalue="Python tests.pytest for test_part_search.Test_Part_Search" />
-        <item itemvalue="Python tests.pytest for test_cart_actions.Test_CartActions" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +184,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Edukaan_Customer" />
                       </list>
                     </value>
                   </entry>

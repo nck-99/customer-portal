@@ -23,6 +23,7 @@ class LoginPage(BasePage):
     Logout_button = (By.ID, "header-logout")
     Confirm_logout = (By.XPATH, "/html/body/modal-container/div/div/app-logout/div[2]/button[1]")
     Login_err_msg = (By.ID, "toast-container")
+    Skip_Tour = (By.CSS_SELECTOR, "#overlay > div > div:nth-child(4) > h6")
 
     def select_Login(self):
         self.find_element(self.LOGIN).click()
@@ -101,6 +102,9 @@ class LoginPage(BasePage):
             return True
         else:
             return False
+
+    def skip_tour(self):
+        self.find_element(self.Skip_Tour).click()
 
 
 

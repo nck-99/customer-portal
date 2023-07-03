@@ -73,7 +73,9 @@ class Test_Login_Logout():
         cp.wait(5)
         cp.enter_otp("123456")
         cp.click_next()
+        time.sleep(3)
         cp.select_user()
+        time.sleep(3)
         assert cp.verify_login() == True
         time.sleep(10)
         cp.user_details()

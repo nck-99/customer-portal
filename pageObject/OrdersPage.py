@@ -118,7 +118,7 @@ class Orders(BasePage):
     def move_to_payment(self):
         self.skip_cupon()
         time.sleep(3)
-        self.find_element(self.Body).send_keys(Keys.ARROW_UP * 7)
+        self.find_element(self.Body).send_keys(Keys.ARROW_UP * 5)
         time.sleep(3)
         self.find_element(self.Proceed_to_payment).click()
         time.sleep(3)

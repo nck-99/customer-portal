@@ -10,7 +10,7 @@ class SetPassword(BasePage):
         Confirm_pwd_txtbox = (By.ID, "checkout-address")
         SAVE_button = (By.XPATH, "/html/body/div[1]/app-root/app-main/section/app-layout/set-password/div/div/div/div/div/div/div/div/form/div/button")
         VERIFY_container = (By.ID, "toast-container")
-        Skip_Tour = (By.XPATH, "/html/body/div[1]/app-root/app-main/app-coach-marks/div/div/div[4]/button[1]")
+
         def click_user_profile(self):
             self.find_element(self.UserProfile).click()
 
@@ -23,9 +23,6 @@ class SetPassword(BasePage):
 
         def save(self):
             self.find_element(self.SAVE_button).click()
-
-        def skip_tour(self):
-            self.find_element(self.Skip_Tour).click()
 
         def verify_set_pw(self, setup, pw, mno, con):
             cp = LoginPage(setup)
@@ -57,8 +54,8 @@ class SetPassword(BasePage):
             cp.click_next()
             time.sleep(3)
             cp.select_user()
-            cp.wait(5)
-            self.skip_tour()
+            time.sleep(5)
+            cp.skip_tour()
 
 
 

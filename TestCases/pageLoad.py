@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import logging
 
+
 logging.basicConfig(filename='../Logs/PageLoadTime.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logging.info("Loading page on #CHROME Browser")
 url = "https://ibpodev.home.tatamotors/edukaan_ui/#/"

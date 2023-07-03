@@ -72,7 +72,7 @@ class Test_WhishList:
         wl.search_part("Wheel")
         time.sleep(5)
         wl.select_part()
-        wl.wait(7)
+        wl.wait(9)
         wl.add_whishlist()
         if wl.check_msg() == 0:
             assert True
