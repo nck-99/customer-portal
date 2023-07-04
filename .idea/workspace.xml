@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13fd76ce-9cef-4f0f-9f75-90c0b2da8319" name="Changes" comment="6/1/23">
+    <list default="true" id="13fd76ce-9cef-4f0f-9f75-90c0b2da8319" name="Changes" comment="Final 3/7/23">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2023_4_51_PM_[Changes]/EdukaanCLogin.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2023_4_51_PM_[Changes]/shelved.patch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/PageLoadTime.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/PageLoadTime.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/pageLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/pageLoad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/test_customer_login_logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_customer_login_logout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/test_whishlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_whishlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObject/CustomerPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/CustomerPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObject/OrdersPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/OrdersPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObject/SETPassword.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/SETPassword.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestData/EdukaanCLogin.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/EdukaanCLogin.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +29,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -159,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680759684473</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Final 3/7/23">
+      <created>1688364785181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688364785181</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +236,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edukaan_Customer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edukaan_Customer" />
+    <MESSAGE value="Final 3/7/23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final 3/7/23" />
   </component>
 </project>
